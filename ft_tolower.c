@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 20:34:58 by duha              #+#    #+#             */
-/*   Updated: 2024/10/30 10:59:12 by duha             ###   ########.fr       */
+/*   Created: 2024/10/30 11:20:30 by duha              #+#    #+#             */
+/*   Updated: 2024/10/30 11:31:05 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int ft_tolower(int c)
 {
-	size_t i;
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	else return (c);
+}
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+int main (void)
+{
+	printf("%c\n", ft_tolower('A'));
+	printf("%c\n", tolower('A'));
 }
