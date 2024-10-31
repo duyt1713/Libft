@@ -6,9 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/10/31 10:58:48 by duha             ###   ########.fr       */
+/*   Updated: 2024/10/31 12:28:32 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//complile with the -I flag to include the libft.h header file, look into this later
 
 #include "libft.h"
 
