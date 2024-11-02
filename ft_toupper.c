@@ -6,21 +6,20 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 11:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/10/30 11:31:01 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/02 12:58:23 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	else return (c);
+	return ((c >= 'a' && c <= 'z'));
 }
 
-int main (void)
+int	ft_toupper(int c)
 {
-	printf("%c\n", ft_toupper('a'));
-	printf("%c\n", toupper('a'));
+	if (ft_islower(c))
+		return (c - 32);
+	else return (c);
 }

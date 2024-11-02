@@ -6,9 +6,11 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2024/10/29 20:27:34 by duha             ###   ########.fr        #
+#    Updated: 2024/11/02 13:31:31 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+*Not complete don't look*
 
 NAME = libft.a
 CC = gcc

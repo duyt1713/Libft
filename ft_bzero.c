@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 19:29:15 by duha              #+#    #+#             */
-/*   Updated: 2024/11/02 12:53:37 by duha             ###   ########.fr       */
+/*   Created: 2024/11/02 11:13:30 by duha              #+#    #+#             */
+/*   Updated: 2024/11/02 11:13:39 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	size_t i;
+	char *string;
+
+	i = 0;
+	string = (char *)s;
+
+	while (i < n)
+	{
+		string[i] = 0;
+		i++;
+	}
 }

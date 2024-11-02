@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:34:58 by duha              #+#    #+#             */
-/*   Updated: 2024/10/30 10:59:12 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/02 13:28:53 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	const char	*start = s;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	while (*s)
+		s++;
+	return (s - start);
 }
