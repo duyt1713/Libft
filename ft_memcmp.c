@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/30 11:20:30 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 13:59:18 by duha             ###   ########.fr       */
+/*   Created: 2024/11/03 17:44:09 by duha              #+#    #+#             */
+/*   Updated: 2024/11/03 18:09:04 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_isupper(int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	return ((c >= 'A' && c <= 'Z'));
-}
+	const unsigned char *p1;
+	const unsigned char *p2;
 
-int	ft_tolower(int c)
-{
-	if (ft_isupper(c))
-		return (c + 32);
-	else return (c);
+	p1 = (const unsigned char *)s1;
+	p2 = (const unsigned char *)s2;
+	while (n--)
+	{
+		if (*p1 != *p2)
+			return (*p1 - *p2);
+		p1++;
+		p2++;
+	}
+	return (0);
 }

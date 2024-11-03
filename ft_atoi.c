@@ -6,15 +6,13 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/02 13:19:32 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/03 17:42:47 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//complile with the -I flag to include the libft.h header file, look into this later
-
 #include "libft.h"
 
-int	ft_isspace(int c)
+static int	ft_isspace(int c)
 {
 	return (c == 32 || (9 <= c && c <= 13));
 }
