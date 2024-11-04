@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 14:03:39 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 01:37:53 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_toupper(int c);
 
 //Functions from stdib.h
 int	ft_atoi(const char *nptr);
-void	*ft_calloc(size_t count, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size)
 
 //Functions from string.h
 #include <string.h> //for tests, to be removed
