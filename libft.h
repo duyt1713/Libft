@@ -6,14 +6,13 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 21:27:52 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 23:08:08 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <limits.h>
 # include <stdlib.h>
 # include <unistd.h>
 
