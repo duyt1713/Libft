@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 11:13:30 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 23:24:50 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 19:43:30 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	char *string;
-
-	i = 0;
-	string = (char *)s;
-
-	while (i < n)
-	{
-		string[i] = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }
