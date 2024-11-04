@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 01:54:14 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 15:27:20 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,20 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			*d++ = *s++;
 	}
 	return (dst);
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+	char dst1[] = "abcdefghij";
+	char dst2[] = "abcdefghij";
+	printf("Before ft_memmove: %s\n", dst1);
+	printf("Before memmove: %s\n", dst2);
+	ft_memmove(dst1, dst1 + 5, 5);
+	memmove(dst2, dst2 + 5, 5);
+	printf("After ft_memmove: %s\n", dst1);
+	printf("After memmove: %s\n", dst2);
+	return (0);
 }
