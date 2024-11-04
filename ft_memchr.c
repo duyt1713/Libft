@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 23:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 23:23:19 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:03:07 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char *p;
+	const unsigned char	*p;
 
 	p = (const unsigned char *)s;
 	while (n--)

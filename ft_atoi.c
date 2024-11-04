@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 19:44:17 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:07:40 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ int	ft_atoi(const char *nptr)
 		num = num * 10 + (*nptr - '0');
 		nptr++;
 	}
-	return (num*sign);
+	return (num * sign);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -80,4 +80,4 @@ int main(void)
         free(str);
         i++;
     }
-}
+} */

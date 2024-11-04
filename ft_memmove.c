@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 19:01:46 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:08:19 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char *d;
-	const char *s;
+	char		*d;
+	const char	*s;
 
 	d = (char *)dst;
 	s = (const char *)src;
@@ -49,8 +49,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 
 int main(void)
@@ -64,4 +63,4 @@ int main(void)
 	printf("After ft_memmove: %s\n", dst1);
 	printf("After memmove: %s\n", dst2);
 	return (0);
-}
+} */

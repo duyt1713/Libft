@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:07:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 20:12:49 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:09:12 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const unsigned char *p;
+	const unsigned char	*p;
 
 	p = (const unsigned char *)s + ft_strlen(s);
 	while (p >= (const unsigned char *)s)
@@ -35,7 +35,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-int main(void)
+/* int main(void)
 {
 	char *s = "Hello, world!";
 	char *p;
@@ -44,4 +44,4 @@ int main(void)
 	p = strrchr(s, 'l');
 	printf("strrchr: %s\n", p);
 	return (0);
-}
+} */

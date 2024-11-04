@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:55:52 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 20:00:32 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:08:49 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	const unsigned char *p;
+	const unsigned char	*p;
 
-	p = (const unsigned char*)s;
+	p = (const unsigned char *)s;
 	while (*p)
 	{
 		if (*p == (unsigned char)c)
@@ -37,7 +37,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)p);
 	return (NULL);
 }
-int main(void)
+/* int main(void)
 {
 	char *s = "Hello, world!";
 	char *p;
@@ -46,4 +46,4 @@ int main(void)
 	p = strchr(s,'w');
 	printf("strchr: %s\n", p);
 	return (0);
-}
+} */

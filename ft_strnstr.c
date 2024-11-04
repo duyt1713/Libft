@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:27:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 21:45:21 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:06:19 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-#include <bsd/string.h> //compile with -lbsd tag
+
+/* #include <bsd/string.h> //compile with -lbsd tag
 int main(void)
 {
 	const char big[] = "slay kween";
@@ -51,4 +52,4 @@ int main(void)
 	printf("ft_strnstr: %s\n", res1);
 	printf("strnstr:    %s\n", res2);
 	return 0;
-}
+} */

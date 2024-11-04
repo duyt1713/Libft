@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 11:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 23:37:07 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/04 22:04:26 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ int	ft_toupper(int c)
 {
 	if (ft_islower(c))
 		return (c - 32);
-	else return (c);
+	else
+		return (c);
 }
