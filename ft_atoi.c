@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 22:07:40 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/05 12:15:25 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ static int	ft_isspace(int c)
 int	ft_atoi(const char *nptr)
 {
 	int	sign;
-	int	num;
+	long long	num;
+	long long	check;
 
 	sign = 1;
 	num = 0;
@@ -52,20 +53,25 @@ int	ft_atoi(const char *nptr)
 			sign = -1;
 		nptr++;
 	}
-	while (ft_isdigit(*nptr))
+	while (*nptr && ft_isdigit(*nptr))
 	{
-		num = num * 10 + (*nptr - '0');
+		check = num * 10 + (*nptr - '0');
+		if (check / 10 != num && sign == 1)
+			return (-1);
+		if (check / 10 != num && sign == -1)
+			return (0);
+		num = check;
 		nptr++;
 	}
-	return (num * sign);
+	return ((int)(num * sign));
 }
-/* #include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 int main(void)
 {
-    char *s = "21474836481111111111111111111111111111111111";
+    char *s = "-21474836481111111111111111111111111111111111";
     char *str;
 
     int i = 2;
@@ -80,4 +86,4 @@ int main(void)
         free(str);
         i++;
     }
-} */
+}

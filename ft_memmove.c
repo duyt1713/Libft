@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 22:08:19 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/05 11:45:38 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = (char *)dst;
 	s = (const char *)src;
-	if (d > s && d < s + len)
+	if (d > s && d < (s + len))
 	{
-		d += len;
-		s += len;
 		while (len--)
-			*--d = *--s;
+			d[len] = s[len];
 	}
 	else
 	{
@@ -49,18 +47,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/* #include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 
 int main(void)
 {
-	char dst1[] = "abcdefghij";
-	char dst2[] = "abcdefghij";
+	char dst1[] = "0123456789";
+	char dst2[] = "0123456789";
 	printf("Before ft_memmove: %s\n", dst1);
 	printf("Before memmove: %s\n", dst2);
-	ft_memmove(dst1, dst1 + 4, 7);
-	memmove(dst2, dst2 + 4, 7);
+	ft_memmove(dst1 + 4, dst1, 6);
+	memmove(dst2 + 4, dst2, 6);
 	printf("After ft_memmove: %s\n", dst1);
 	printf("After memmove: %s\n", dst2);
 	return (0);
-} */
+}
