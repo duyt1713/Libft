@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:21:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 03:04:17 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:31:12 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	if (!(p = (char *)malloc(s1_len + s2_len + 1)))
+	p = (char *)malloc(s1_len + s2_len + 1);
+	if (!p)
 		return (NULL);
 	ft_memcpy(p, s1, s1_len);
 	ft_memcpy(p + s1_len, s2, s2_len);
-	p[s1_len + s2_len] = '\0'; 
+	p[s1_len + s2_len] = '\0';
 	return (p);
 }
 /* int main(void)

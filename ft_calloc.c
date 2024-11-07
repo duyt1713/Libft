@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:56:16 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 04:20:08 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:28:55 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (size > SIZE_MAX / nmemb)
 		return (NULL);
 	total = nmemb * size;
-	if (!(p = malloc(total)))
+	p = malloc(total);
+	if (!p)
 		return (NULL);
 	ft_memset(p, 0, total);
 	return (p);

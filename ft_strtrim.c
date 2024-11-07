@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:51:31 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 03:38:12 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:31:50 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_strchr(set, *(end - 1)))
 		end--;
 	trim_len = end - start;
-	if (!(trim = (char *)malloc(trim_len + 1)))
+	trim = (char *)malloc(trim_len + 1);
+	if (!trim)
 		return (NULL);
 	ft_memcpy(trim, start, trim_len);
 	trim[trim_len] = '\0';

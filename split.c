@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 20:46:25 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 04:10:05 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:36:53 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,6 @@
            NULL if the allocation fails.
  */
 
-
-
 char	**ft_split(char const *s, char c)
 {
-
 }

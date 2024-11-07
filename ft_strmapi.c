@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:34:22 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 05:12:31 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:39:16 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,36 +27,36 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    unsigned int	i;
-    char	*p;
+	unsigned int	i;
+	char			*p;
 
-    if (!s || !f)
-        return (NULL);
-    p = (char *)malloc(ft_strlen(s) + 1);
-    if (!p)
-        return (NULL);
-    i = 0;
-    while (s[i])
-    {
-        p[i] = f(i, s[i]);
-        i++;
-    }
-    p[i] = '\0';
-    return (p);
+	if (!s || !f)
+		return (NULL);
+	p = (char *)malloc(ft_strlen(s) + 1);
+	if (!p)
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		p[i] = f(i, s[i]);
+		i++;
+	}
+	p[i] = '\0';
+	return (p);
 }
 /* char ft_plus_a(unsigned int a, char c)
 {
 	c += a;
-    return c;
+	return c;
 }
 int main(void)
 {
 	char s[] = "0000000000";
-    char *result = ft_strmapi(s, ft_plus_a);
-    if (result)
-    {
-        printf("%s\n", result); // Expected output: "0123456789"
-        free(result);
-    }
-    return 0;
+	char *result = ft_strmapi(s, ft_plus_a);
+	if (result)
+	{
+		printf("%s\n", result); // Expected output: "0123456789"
+		free(result);
+	}
+	return 0;
 } */

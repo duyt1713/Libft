@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 04:24:38 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:34:56 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 # include <stddef.h>
 # include <stdio.h> //testing purpose for printf, to be removed
 
-typedef struct	s_list
+typedef struct s_list
 {
-	void		*content;
-	struct		s_list *next;
-}				t_list;
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 /* Part 1 - Libc functions */
 

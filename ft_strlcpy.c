@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 22:20:11 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 03:34:15 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:27:47 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (len);
 	if (len + 1 < size)
 		ft_memcpy(dst, src, len + 1);
-    else
-    {
-        ft_memcpy(dst, src, size - 1);
-	    dst[size - 1] = '\0';
-    }
+	else
+	{
+		ft_memcpy(dst, src, size - 1);
+		dst[size - 1] = '\0';
+	}
 	return (len);
 }
 /* int main(void)

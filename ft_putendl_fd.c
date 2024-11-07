@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 00:02:53 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:35:46 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-		write(fd, s, ft_strlen(s));
-		write(fd, "\n", 1);
+	write(fd, s, ft_strlen(s));
+	write(fd, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 00:56:14 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:39:28 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	ft_isspace(int c);
 
 int	ft_atoi(const char *nptr)
 {
-	int	sign;
+	int			sign;
 	long long	num;
 	long long	check;
 

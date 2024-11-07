@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:25:05 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 03:01:18 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:29:42 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ char	*ft_strdup(const char *s1)
 	char	*s2;
 	char	*p;
 
-	if (!(s2 = (char *)malloc(ft_strlen(s1) + 1)))
+	s2 = (char *)malloc(ft_strlen(s1) + 1);
+	if (!s2)
 		return (NULL);
 	p = s2;
 	while (*s1)

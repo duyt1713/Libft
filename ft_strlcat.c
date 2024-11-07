@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:02:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 03:22:28 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:30:26 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;
 	size_t	dst_len;
-    size_t  cat_len;
+	size_t	cat_len;
 
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	if (size <= dst_len)
 		return (size + src_len);
-    cat_len = size - dst_len - 1;
-    if (cat_len > src_len)
-        cat_len = src_len;
+	cat_len = size - dst_len - 1;
+	if (cat_len > src_len)
+		cat_len = src_len;
 	ft_memcpy(dst + dst_len, src, cat_len);
-    dst[dst_len + cat_len] = '\0';
+	dst[dst_len + cat_len] = '\0';
 	return (src_len + dst_len);
 }
 /* int main(void)

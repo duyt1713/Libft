@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:38:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 02:24:15 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:37:41 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ char	*ft_itoa(int n)
 	size_t	len;
 
 	len = ft_count_digit(n);
-	if (!(p = (char *)malloc(len + 1)))
+	p = (char *)malloc(len + 1);
+	if (!p)
 		return (NULL);
 	p[len] = '\0';
 	if (n == 0)
@@ -53,8 +54,7 @@ char	*ft_itoa(int n)
 	}
 	return (p);
 }
-
-static size_t	ft_count_digit(int n)
+/* static size_t	ft_count_digit(int n)
 {
 	size_t	len;
 
@@ -76,9 +76,9 @@ static size_t	ft_count_digit(int n)
 	return (len);
 }
 
-int main(void)
+int	main(void)
 {
 	int a = INT_MIN;
 	int b = a;
 	printf("%d %s\n", b, ft_itoa(b));
-}
+} */
