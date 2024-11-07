@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:09:35 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 00:10:32 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 03:46:28 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,10 @@
  * to the memory area pointed to by dst. The memory areas must not overlap.
  *
  * Note: The standard memcpy function does not handle NULL pointers and assumes
- * that the caller ensures valid pointers.
- * 
+ *       that the caller ensures valid pointers.
+ *       If src and dst overlap, the behavior is undefined.
+ *       Consider using ft_memmove if this might be the case.
+ *
  * Return: A pointer to the destination memory area dst.
  */
 

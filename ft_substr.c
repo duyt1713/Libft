@@ -6,11 +6,12 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:50:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 12:54:55 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 03:40:48 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * ft_substr - Allocates (with malloc(3)) and returns a substring from
@@ -36,10 +37,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > s_len - start)
 		len = s_len - start;
-	p = (char *)malloc(len + 1);
-	if (!p)
+	if (!(p = (char *)malloc(len + 1)))
 		return (NULL);
-	ft_strlcpy(p, s + start, len + 1);
+	ft_memcpy(p, s + start, len);
+	p[len] = '\0';
 	return (p);
 }
 /* int main(void)

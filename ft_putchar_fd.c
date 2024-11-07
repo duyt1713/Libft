@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putstr_fd.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 21:47:01 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/06 23:48:36 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 /**
- * ft_putstr_fd - Outputs the string ’s’ to the given file descriptor.
+ * ft_putchar_fd - Outputs the character ’c’ to the given file descriptor.
  *
- * @s: The string to output.
+ * @c: The character to output.
  * @fd: The file descriptor on which to write.
  */
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
+	write(fd, &c, 1);
 }

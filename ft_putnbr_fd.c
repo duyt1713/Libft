@@ -1,28 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striteri.c                                         :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 21:34:22 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 21:39:13 by duha             ###   ########.fr       */
+/*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
+/*   Updated: 2024/11/07 00:15:18 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
+#include <unistd.h>
 
 /**
- * ft_striteri - Applies the function ’f’ on each character of the string
- *               passed as argument, passing its index as first argument.
- *               Each character is passed by address to ’f’ to be modified
- *               if necessary.
+ * ft_putnbr_fd - Outputs the integer ’n’ to the given file descriptor.
  *
- * @s: The string on which to iterate.
- * @f: The function to apply to each character.
+ * @n: The integer to output.
+ * @fd: The file descriptor on which to write.
  */
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_putnbr_fd(int n, int fd)
 {
+	char	c;
 
+	if (n == INT_MIN)
+	{
+		write(fd, "-2147483648", 11);
+		return;
+	}
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n >= 10)
+		ft_putnbr_fd(n / 10, fd);
+	c = (n % 10) + '0';
+	write(fd, &c, 1);
 }

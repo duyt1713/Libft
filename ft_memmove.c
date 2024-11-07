@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 11:45:38 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 03:53:47 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@
  * to the memory area pointed to by dst. The memory areas may overlap.
  *
  * Note: The standard memmove function does not handle NULL pointers and assumes
- * that the caller ensures valid pointers.
+ *       that the caller ensures valid pointers.
+ *       If memory overlapping is not an issue, consider using ft_memcpy
+ *       as it may be faster.
  *
  * Return: A pointer to the destination memory area dst.
  */
@@ -33,8 +35,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char		*d;
 	const char	*s;
 
-	d = (char *)dst;
-	s = (const char *)src;
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
 	if (d > s && d < (s + len))
 	{
 		while (len--)
@@ -47,7 +49,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 
 int main(void)
@@ -61,4 +63,4 @@ int main(void)
 	printf("After ft_memmove: %s\n", dst1);
 	printf("After memmove: %s\n", dst2);
 	return (0);
-}
+} */

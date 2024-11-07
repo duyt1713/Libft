@@ -6,23 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 12:15:25 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 00:56:14 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/**
- * ft_isspace - Checks if a character is a whitespace character.
- * @c: The character to be checked.
- *
- * Return: non-zero if the character is a whitespace character, 0 otherwise.
- */
-
-static int	ft_isspace(int c)
-{
-	return (c == 32 || (9 <= c && c <= 13));
-}
 
 /**
  * ft_atoi - Converts a string to an integer.
@@ -36,6 +24,8 @@ static int	ft_isspace(int c)
  *
  * Return: The converted integer.
  */
+
+static int	ft_isspace(int c);
 
 int	ft_atoi(const char *nptr)
 {
@@ -65,7 +55,20 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(num * sign));
 }
-#include <stdio.h>
+
+/**
+ * ft_isspace - Checks if a character is a whitespace character.
+ * @c: The character to be checked.
+ *
+ * Return: non-zero if the character is a whitespace character, 0 otherwise.
+ */
+
+static int	ft_isspace(int c)
+{
+	return (c == 32 || (9 <= c && c <= 13));
+}
+
+/* #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -86,4 +89,4 @@ int main(void)
         free(str);
         i++;
     }
-}
+} */

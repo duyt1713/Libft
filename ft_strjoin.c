@@ -6,11 +6,12 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:21:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 12:54:26 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 03:04:17 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * ft_strjoin - Allocates (with malloc(3)) and returns a new string,
@@ -32,11 +33,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	p = (char *)malloc(s1_len + s2_len + 1);
-	if (!p)
+	if (!(p = (char *)malloc(s1_len + s2_len + 1)))
 		return (NULL);
-	ft_strlcpy(p, s1, s1_len + 1);
-	ft_strlcat(p, s2, s1_len + s2_len + 1);
+	ft_memcpy(p, s1, s1_len);
+	ft_memcpy(p + s1_len, s2, s2_len);
+	p[s1_len + s2_len] = '\0'; 
 	return (p);
 }
 /* int main(void)

@@ -6,11 +6,12 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:25:05 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 23:53:09 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 03:01:18 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * ft_strdup - Duplicates a string by allocating memory and copying the content.
@@ -28,8 +29,7 @@ char	*ft_strdup(const char *s1)
 	char	*s2;
 	char	*p;
 
-	s2 = (char *)malloc(ft_strlen(s1) + 1);
-	if (!s2)
+	if (!(s2 = (char *)malloc(ft_strlen(s1) + 1)))
 		return (NULL);
 	p = s2;
 	while (*s1)

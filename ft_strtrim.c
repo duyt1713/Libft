@@ -6,11 +6,12 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:51:31 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 15:57:22 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 03:38:12 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * ft_strtrim - Allocates (with malloc(3)) and returns a copy of ’s1’ with
@@ -28,7 +29,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*start;
 	char	*end;
 	char	*trim;
-	size_t	s1_len;
 	size_t	trim_len;
 
 	if (!s1 || !set)
@@ -36,15 +36,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = (char *)s1;
 	while (*start && ft_strchr(set, *start))
 		start++;
-	s1_len = ft_strlen(s1);
-	end = (char *)s1 + s1_len;
+	end = (char *)s1 + ft_strlen(s1);
 	while (end > start && ft_strchr(set, *(end - 1)))
 		end--;
 	trim_len = end - start;
-	trim = (char *)malloc(trim_len + 1);
-	if (!trim)
+	if (!(trim = (char *)malloc(trim_len + 1)))
 		return (NULL);
-	ft_strlcpy(trim, start, trim_len + 1);
+	ft_memcpy(trim, start, trim_len);
+	trim[trim_len] = '\0';
 	return (trim);
 }
 /* int main(void)

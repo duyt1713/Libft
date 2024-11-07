@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   split.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 20:46:25 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 20:50:07 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 04:10:05 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * ft_split - Allocates (with malloc(3)) and returns an array of strings
@@ -23,6 +24,8 @@
  * Return: The array of new strings resulting from the split.
            NULL if the allocation fails.
  */
+
+
 
 char	**ft_split(char const *s, char c)
 {
