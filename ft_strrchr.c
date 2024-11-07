@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:07:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 22:09:12 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:03:18 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /**
  * ft_strrchr - Locate the last occurrence of c (converted to an unsigned char)
  *              in the string pointed to by s.
+ * 
  * @s: Pointer to the null-terminated string to be searched.
  * @c: Character to be located.
  *

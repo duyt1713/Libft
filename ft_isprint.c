@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:32:14 by duha              #+#    #+#             */
-/*   Updated: 2024/11/03 23:31:05 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:04:18 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /**
  * ft_isprint - Checks if the given character is printable.
+ * 
  * @c: The character to be checked.
  *
  * This function checks if the given character is a printable character,

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:02:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:55:58 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:03:42 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /**
  * ft_strlcat - Concatenates the string src to the end of dst, ensuring that the
  *              result is null-terminated and does not exceed size bytes.
+ * 
  * @dst:  The destination buffer.
  * @src:  The source string.
  * @size: The total size of the destination buffer.

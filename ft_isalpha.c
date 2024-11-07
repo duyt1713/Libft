@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:19:55 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 00:57:02 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:04:31 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /**
  * ft_isalpha - Checks if the given character is an alphabetic letter.
+ *
  * @c: The character to be checked.
  *
  * This function checks if the given character is an alphabetic letter,
@@ -34,6 +35,7 @@ int	ft_isalpha(int c)
 
 /**
  * ft_isupper - Checks if the given character is an uppercase letter.
+ *
  * @c: The character to be checked.
  *
  * This function checks if the given character is an uppercase letter
@@ -49,6 +51,7 @@ static int	ft_isupper(int c)
 
 /**
  * ft_islower - Checks if the given character is a lowercase letter.
+ * 
  * @c: The character to be checked.
  *
  * This function checks if the given character is a lowercase letter

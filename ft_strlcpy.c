@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 22:20:11 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:53:07 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:03:39 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /**
  * ft_strlcpy - Copies up to size - 1 characters from the NUL-terminated string
  *              src to dst, NUL-terminating the result.
+ * 
  * @dst:  The destination buffer.
  * @src:  The source string.
  * @size: The size of the destination buffer.

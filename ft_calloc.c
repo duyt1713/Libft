@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:56:16 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:53:16 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:04:40 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 /**
  * ft_calloc - Allocates memory for an array of count elements of size bytes
  *             each and initializes all bytes in the allocated storage to zero.
+ * 
  * @count: Number of elements to allocate.
  * @size:  Size of each element.
  *

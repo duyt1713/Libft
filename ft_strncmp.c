@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:44:00 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:56:58 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:03:25 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /**
  * ft_strncmp - Compares up to n characters of the strings s1 and s2.
+ * 
  * @s1: The first string to be compared.
  * @s2: The second string to be compared.
  * @n:  The maximum number of characters to compare.

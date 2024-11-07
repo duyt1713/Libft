@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 11:13:30 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:44:31 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:04:43 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /**
  * ft_bzero - Sets the first n bytes of the memory area pointed to by s to zero.
+ * 
  * @s: Pointer to the memory area to be zeroed.
  * @n: Number of bytes to be set to zero.
  *

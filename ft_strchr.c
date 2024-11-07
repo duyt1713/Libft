@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:55:52 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 22:08:49 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:03:51 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /**
  * ft_strchr - Locate the first occurrence of c (converted to an unsigned char)
  *             in the string pointed to by s.
+ * 
  * @s: Pointer to the null-terminated string to be searched.
  * @c: Character to be located.
  *

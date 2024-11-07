@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 11:20:30 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 00:55:04 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:03:06 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 /**
  * ft_tolower - Converts an uppercase letter to a lowercase letter.
+ *
  * @c: The character to be converted.
  *
  * This function converts an uppercase letter to the corresponding
@@ -35,6 +36,7 @@ int	ft_tolower(int c)
 }
 /**
  * ft_isupper - Checks if the given character is an uppercase letter.
+ * 
  * @c: The character to be checked.
  *
  * This function checks if the given character is an uppercase letter
