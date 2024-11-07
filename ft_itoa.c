@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:38:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:37:41 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:54:28 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 #include <stdlib.h>
 
 /**
- * ft_itoa - Allocates (with malloc(3)) and returns a string
- *           representing the integer received as an argument.
- *           Negative numbers must be handled.
+ * ft_itoa - Allocates (with malloc(3)) and returns a string representing the
+ *           integer received as an argument. Negative numbers must be handled.
  *
  * @n: the integer to convert.
  *

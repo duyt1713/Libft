@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:50:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:30:51 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:59:47 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
  *             the string ’s’. The substring begins at index ’start’
  *             and is of maximum size ’len’.
  *
- * @s: The string from which to create the substring.
+ * @s:     The string from which to create the substring.
  * @start: The start index of the substring in the string ’s’.
- * @len:  The maximum length of the substring.
+ * @len:   The maximum length of the substring.
  *
  * Return: The substring, or NULL if the allocation fails.
  */

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:09:35 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 03:46:28 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:55:05 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
  * ft_memcpy - Copies n bytes from memory area src to memory area dst.
  * @dst: Pointer to the destination memory area.
  * @src: Pointer to the source memory area.
- * @n: Number of bytes to copy.
+ * @n:   Number of bytes to copy.
  *
  * This function copies n bytes from the memory area pointed to by src
  * to the memory area pointed to by dst. The memory areas must not overlap.

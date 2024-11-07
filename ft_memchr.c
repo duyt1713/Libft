@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 23:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/04 22:03:07 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:54:54 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
  * @c: Character to be located.
  * @n: Number of bytes to be analyzed.
  *
- * Return: A pointer to the matching byte or NULL if the character does not
- *         occur in the given memory area.
+ * Return: A pointer to the matching byte
+ *         or NULL if the character does not occur in the given memory area.
  */
 
 void	*ft_memchr(const void *s, int c, size_t n)

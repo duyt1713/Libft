@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:02:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:30:26 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:55:58 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 /**
  * ft_strlcat - Concatenates the string src to the end of dst, ensuring that the
  *              result is null-terminated and does not exceed size bytes.
- * @dst: The destination buffer.
- * @src: The source string.
+ * @dst:  The destination buffer.
+ * @src:  The source string.
  * @size: The total size of the destination buffer.
  *
- * This function appends the null-terminated string src to the end of dst. It will
- * append at most size - ft_strlen(dst) - 1 bytes, null-terminating the result. The
- * function returns the total length of the string it tried to create, which is the
- * initial length of dst plus the length of src. If the return value is greater than
- * or equal to size, truncation occurred.
+ * This function appends the null-terminated string src to the end of dst. It
+ * will append at most size - ft_strlen(dst) - 1 bytes, null-terminating the
+ * result. The function returns the total length of the string it tried to
+ * create, which is the initial length of dst plus the length of src. If the
+ * return value is greater than or equal to size, truncation occurred.
  */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

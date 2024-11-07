@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/06 23:48:36 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:55:26 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /**
  * ft_putchar_fd - Outputs the character ’c’ to the given file descriptor.
  *
- * @c: The character to output.
+ * @c:  The character to output.
  * @fd: The file descriptor on which to write.
  */
 

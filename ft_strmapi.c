@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:34:22 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:39:16 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 07:00:16 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 #include <stdlib.h>
 
 /**
- * ft_strmapi - Applies the function ’f’ to each character of the string ’s’
- *              to create a new string resulting from successive applications of ’f’.
+ * ft_strmapi - Applies the function f to each character of the string s to
+ *              create a new string resulting from successive applications of f.
  *
  * @s: The string on which to iterate.
  * @f: The function to apply to each character.
  *
- * Return: The string created from the successive applications of ’f’.
+ * Return: The string created from the successive applications of f.
  *         NULL if the allocation fails.
  */
 

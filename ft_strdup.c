@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:25:05 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:29:42 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:55:45 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
  * does the copy, and returns a pointer to it. The memory allocated for the
  * new string is obtained with malloc, and can be freed with free.
  *
- * Return: A pointer to the duplicated string, or NULL if memory allocation fails.
+ * Return: A pointer to the duplicated string,
+ *         or NULL if memory allocation fails.
  */
 
 char	*ft_strdup(const char *s1)

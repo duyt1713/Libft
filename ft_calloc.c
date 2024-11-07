@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:56:16 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:28:55 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:53:16 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 #include <stdlib.h>
 
 /**
- * ft_calloc - Allocates memory for an array of count elements of size bytes each
- *             and initializes all bytes in the allocated storage to zero.
+ * ft_calloc - Allocates memory for an array of count elements of size bytes
+ *             each and initializes all bytes in the allocated storage to zero.
  * @count: Number of elements to allocate.
- * @size: Size of each element.
+ * @size:  Size of each element.
  *
- * This function allocates memory for an array of count elements of size bytes each.
- * The allocated memory is initialized to zero. If the allocation fails, the function
- * returns NULL.
+ * This function allocates memory for an array of count elements of size bytes
+ * each. The allocated memory is initialized to zero. If the allocation fails,
+ * the function returns NULL.
  *
  * Return: A pointer to the allocated memory, or NULL if the allocation fails.
  */

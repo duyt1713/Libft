@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:36:28 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:55:30 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 /**
  * ft_putnbr_fd - Outputs the integer ’n’ to the given file descriptor.
  *
- * @n: The integer to output.
+ * @n:  The integer to output.
  * @fd: The file descriptor on which to write.
  */
 

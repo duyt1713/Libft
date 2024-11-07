@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:27:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/05 22:09:50 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:59:28 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 /**
  * ft_strnstr - Locate the first occurrence of the null-terminated string little
- *              in the string big, where not more than len characters are searched.
- * @big: Pointer to the null-terminated string to be searched.
+ *              in the string big, searching no more than len characters.
+ * @big:    Pointer to the null-terminated string to be searched.
  * @little: Pointer to the null-terminated string to be located.
- * @len: Number of characters to be analyzed.
+ * @len:    Number of characters to be analyzed.
  *
  * Return: If little is an empty string, big is returned;
  *         if little occurs nowhere in big, NULL is returned;

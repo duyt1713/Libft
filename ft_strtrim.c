@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:51:31 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:31:50 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/07 06:59:41 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  *              the characters specified in ’set’ removed from the beginning
  *              and the end of the string.
  *
- * @s1: The string to be trimmed.
+ * @s1:  The string to be trimmed.
  * @set: The reference set of characters to trim.
  *
  * Return: The trimmed string, or NULL if the allocation fails.
