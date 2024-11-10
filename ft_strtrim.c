@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:51:31 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:59:41 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/09 16:43:45 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,17 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*start;
-	char	*end;
-	char	*trim;
-	size_t	trim_len;
+	char const	*start;
+	char const	*end;
+	char		*trim;
+	size_t		trim_len;
 
 	if (!s1 || !set)
 		return (NULL);
-	start = (char *)s1;
+	start = s1;
 	while (*start && ft_strchr(set, *start))
 		start++;
-	end = (char *)s1 + ft_strlen(s1);
+	end = s1 + ft_strlen(s1);
 	while (end > start && ft_strchr(set, *(end - 1)))
 		end--;
 	trim_len = end - start;
