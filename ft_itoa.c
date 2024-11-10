@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:38:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/09 16:28:16 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/10 22:41:19 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@
  *           integer received as an argument. Negative numbers must be handled.
  *
  * @n: the integer to convert.
+ *
+ * Helper function:
+ * ft_count_digit: Counts the number of digits in the integer.
  *
  * Return: The string representing the integer.
  *         NULL if the allocation fails.

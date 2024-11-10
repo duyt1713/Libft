@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:45 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/10 22:45:14 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
  * ft_atoi - Converts a string to an integer.
  *
  * @nptr: The string to be converted.
+ *
+ * Helper function:
+ * ft_isspace: Checks if a character is a whitespace character.
  *
  * This function converts the initial portion of the string pointed to by nptr
  * to int representation. It discards any whitespace characters until the first

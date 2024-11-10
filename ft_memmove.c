@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:03 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/10 22:51:05 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /**
  * ft_memmove - Copies len bytes from memory area src to memory area dst.
  *              The memory areas may overlap.
- * 
+ *
  * @dst: Pointer to the destination memory area.
  * @src: Pointer to the source memory area.
  * @len: Number of bytes to copy.
@@ -36,8 +36,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char		*d;
 	const char	*s;
 
-	d = (unsigned char *)dst;
-	s = (const unsigned char *)src;
+	d = (char *)dst;
+	s = (const char *)src;
 	if (d > s && d < (s + len))
 	{
 		while (len--)

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 23:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:12 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/10 22:51:55 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /**
  * ft_memchr - Locate the first occurrence of c (converted to an unsigned char)
  *             in the first n bytes of the memory area pointed to by s.
- * 
+ *
  * @s: Pointer to the memory area to be searched.
  * @c: Character to be located.
  * @n: Number of bytes to be analyzed.
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 	{
 		if (*p == (unsigned char)c)
-			return ((const void *)p);
+			return ((void *)p);
 		p++;
 	}
 	return (NULL);
