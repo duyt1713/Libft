@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:55:52 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:03:51 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:26:19 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /**
  * ft_strchr - Locate the first occurrence of c (converted to an unsigned char)
  *             in the string pointed to by s.
- * 
+ *
  * @s: Pointer to the null-terminated string to be searched.
  * @c: Character to be located.
  *
@@ -38,13 +38,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)p);
 	return (NULL);
 }
-/* int main(void)
-{
-	char *s = "Hello, world!";
-	char *p;
-	p = ft_strchr(s, 'w');
-	printf("ft_strchr: %s\n", p);
-	p = strchr(s,'w');
-	printf("strchr: %s\n", p);
-	return (0);
-} */

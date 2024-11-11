@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:34:22 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:00:40 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:28:20 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-/* void ft_plus_a(unsigned int a, char *c)
-{
-	*c += a;
-}
-int main(void)
-{
-	char s[] = "0000000000";
-	ft_striteri(s, ft_plus_a);
-	printf("%s\n", s);
-
-} */

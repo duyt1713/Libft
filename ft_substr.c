@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:50:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:59:47 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:35:12 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p[len] = '\0';
 	return (p);
 }
-/* int main(void)
-{
-	char const s[] = "0123456789";
-	unsigned int start = 3;
-	size_t len = 5;
-	printf("%s\n", ft_substr(s, start, len));
-} */

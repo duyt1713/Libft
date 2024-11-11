@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:51:31 by duha              #+#    #+#             */
-/*   Updated: 2024/11/09 16:43:45 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:35:06 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim[trim_len] = '\0';
 	return (trim);
 }
-/* int main(void)
-{
-	char const s1[] = "abbabablmaobbababa";
-	char const set[] = "ab";
-	char *p = ft_strtrim(s1, set);
-	printf("%s\n", p);
-	free (p);
-} */

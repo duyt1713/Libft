@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/10 22:51:05 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:25:40 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char		*d;
-	const char	*s;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	d = (char *)dst;
-	s = (const char *)src;
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
 	if (d > s && d < (s + len))
 	{
 		while (len--)
@@ -50,18 +50,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/* #include <stdio.h>
-#include <string.h>
-
-int main(void)
-{
-	char dst1[] = "0123456789";
-	char dst2[] = "0123456789";
-	printf("Before ft_memmove: %s\n", dst1);
-	printf("Before memmove: %s\n", dst2);
-	ft_memmove(dst1 + 4, dst1, 6);
-	memmove(dst2 + 4, dst2, 6);
-	printf("After ft_memmove: %s\n", dst1);
-	printf("After memmove: %s\n", dst2);
-	return (0);
-} */

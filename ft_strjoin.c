@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:21:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 06:31:12 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:28:30 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	p[s1_len + s2_len] = '\0';
 	return (p);
 }
-/* int main(void)
-{
-	char const s1[] = "slay";
-	char const s2[] = "kween";
-	char *p = ft_strjoin(s1, s2);
-	if (p)
-	{
-		printf("%s\n", p);
-		free(p);
-	}
-} */

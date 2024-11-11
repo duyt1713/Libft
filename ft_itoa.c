@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:38:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/10 22:41:19 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:22:34 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,9 +78,3 @@ static size_t	ft_count_digit(int n)
 	}
 	return (len);
 }
-/* int	main(void)
-{
-	int a = INT_MIN;
-	int b = a;
-	printf("%d %s\n", b, ft_itoa(b));
-} */

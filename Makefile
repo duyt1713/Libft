@@ -6,14 +6,14 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2024/11/10 22:59:55 by duha             ###   ########.fr        #
+#    Updated: 2024/11/12 01:43:16 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = cc
-HEADER = libft.h
-CFLAGS = -Wall -Wextra -Werror -I./
+CFLAGS = -Wall -Wextra -Werror
+
 SRCS = 	ft_atoi.c \
 		ft_isalpha.c \
 		ft_itoa.c \
@@ -48,7 +48,17 @@ SRCS = 	ft_atoi.c \
 		ft_strlcpy.c \
 		ft_strnstr.c \
 		ft_tolower.c
-BONUS =
+
+BONUS = ft_lstnew_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstadd_back_bonus.c \
+		ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstiter_bonus.c \
+		ft_lstmap_bonus.c
+
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS:.c=.o)
 
@@ -68,7 +78,7 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(BONUS_OBJS)
-	ar rcs $(NAME) $(BONUS_OBJS)
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $^
 
 .PHONY: all clean fclean re bonus

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 20:46:25 by duha              #+#    #+#             */
-/*   Updated: 2024/11/11 00:18:13 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/12 01:26:12 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,18 +52,19 @@ char	**ft_split(char const *s, char c)
 
 static size_t	ft_strs_len(char const *s, char c)
 {
-	size_t		count;
-	char const	*p;
+	size_t	count;
 
 	count = 0;
-	p = s;
-	while (*p)
+	while (*s)
 	{
-		if (*p == c && *(p + 1) != c)
+		while (*s == c)
+			s++;
+		if (*s)
 			count++;
-		p++;
+		while (*s && *s != c)
+			s++;
 	}
-	return (count + 1);
+	return (count);
 }
 
 static size_t	ft_strlen_deli(char const *s, char c)
@@ -103,21 +104,3 @@ static void	ft_strs_cpy(char const *s, char c, char **p, size_t count)
 		}
 	}
 }
-
-/* int main(void)
-{
-    char **result;
-    size_t i;
-
-    result = ft_split("///aff/bs/dffs//csdf///", '/');
-    if (result)
-    {
-        for (i = 0; result[i] != NULL; i++)
-        {
-            printf("String %zu: %s\n", i, result[i]);
-            free(result[i]);
-        }
-        free(result);
-    }
-    return 0;
-} */
