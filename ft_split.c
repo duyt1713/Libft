@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 20:46:25 by duha              #+#    #+#             */
-/*   Updated: 2024/11/10 23:33:58 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/11 00:18:13 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  * Helper functions:
  * ft_strs_len: Counts the number of substrings separated by the delimiter.
  * ft_strlen_deli: Calculates the length of a substring until the delimiter.
- * ft_strings_copy: Copies the substrings into the allocated memory.
+ * ft_strings_cpy: Copies the substrings into the allocated memory.
  *
  * Return: The array of new strings resulting from the split.
  *         NULL if the allocation fails.
@@ -59,9 +59,7 @@ static size_t	ft_strs_len(char const *s, char c)
 	p = s;
 	while (*p)
 	{
-		if (p[0] == c)
-			p++;
-		if (*p == c)
+		if (*p == c && *(p + 1) != c)
 			count++;
 		p++;
 	}
@@ -79,29 +77,29 @@ static size_t	ft_strlen_deli(char const *s, char c)
 
 static void	ft_strs_cpy(char const *s, char c, char **p, size_t count)
 {
-	size_t	i;
 	size_t	len;
+	char	**start;
 
-	i = 0;
-	while (*s && i < count)
+	start = p;
+	while (*s && count > 0)
 	{
 		if (*s == c)
 			s++;
 		else
 		{
 			len = ft_strlen_deli(s, c);
-			p[i] = (char *)malloc(len + 1);
-			if (!p[i])
+			*p = (char *)malloc(len + 1);
+			if (!*p)
 			{
-				while (i > 0)
-					free(p[--i]);
-				free(p);
+				while (p > start)
+					free(*--p);
 				return ;
 			}
-			ft_memcpy(p[i], s, len);
-			p[i][len] = '\0';
+			ft_memcpy(*p, s, len);
+			(*p)[len] = '\0';
 			s += len;
-			i++;
+			p++;
+			count--;
 		}
 	}
 }
