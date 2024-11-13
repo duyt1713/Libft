@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:27:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/12 01:32:25 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:38:28 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	little_len;
 
+	if (!big && !little)
+		return (NULL);
 	if (*little == 0)
 		return ((char *)big);
+	if (len == 0)
+		return (NULL);
 	little_len = ft_strlen(little);
 	while (*big && len >= little_len)
 	{

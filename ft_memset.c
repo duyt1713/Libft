@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 12:34:47 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:00 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:37:49 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /**
  * ft_memset - Fills the first len bytes of the memory area pointed to by b
  *             with the constant byte c.
- * 
+ *
  * @b:   Pointer to the memory area to be filled.
  * @c:   The byte value to be set.
  * @len: Number of bytes to be set to the value.

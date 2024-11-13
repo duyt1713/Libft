@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:25:05 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:03:48 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:38:15 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 /**
  * ft_strdup - Duplicates a string by allocating memory and copying the content.
- * 
+ *
  * @s1: The string to be duplicated.
  *
  * This function allocates sufficient memory for a copy of the string s1,

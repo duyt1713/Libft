@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/11 00:22:29 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:38:42 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stddef.h>
-# include <stdio.h> //testing purpose for printf, to be removed
 
 typedef struct s_list
 {

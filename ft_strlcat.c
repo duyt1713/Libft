@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:02:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/12 01:28:44 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 05:59:33 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dst_len;
 	size_t	cat_len;
 
+	if ((!dst || !src) && size == 0)
+		return (0);
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	if (size <= dst_len)

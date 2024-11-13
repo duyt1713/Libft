@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:29:15 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:37 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:36:55 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * ft_isalnum - Checks if the given character is alphanumeric.
- * 
+ *
  * @c: The character to be checked.
  *
  * This function checks if the given character is either an alphabetic letter

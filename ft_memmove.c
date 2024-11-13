@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:42:41 by duha              #+#    #+#             */
-/*   Updated: 2024/11/12 01:25:40 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 05:43:32 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char		*d;
 	const unsigned char	*s;
 
+	if (!dst && !src)
+		return (NULL);
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
 	if (d > s && d < (s + len))
