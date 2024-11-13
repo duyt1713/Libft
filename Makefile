@@ -85,4 +85,4 @@ so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS)
 	gcc -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re bonus so

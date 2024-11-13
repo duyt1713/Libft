@@ -1,6 +1,7 @@
-a.out
-.DS_Store
 build/
+.DS_Store/
+.vscode/
 libft.a
 libft.so
+a.out
 *.o
