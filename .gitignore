@@ -1,6 +1,6 @@
-**/a.out
-**/.DS_Store
-**/build/
-**/libft.a
-**/libft-war-machine/
-**/libftTester/
+a.out
+.DS_Store
+build/
+libft.a
+libft.so
+*.o

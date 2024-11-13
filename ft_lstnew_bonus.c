@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 00:20:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/12 01:17:28 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:37:32 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-/* int	main(void)
-{
-	t_list	*list;
-
-	list =  ft_lstnew("lmao");
-	printf("%s\n", (char *)list->content);
-	return (0);
-} */

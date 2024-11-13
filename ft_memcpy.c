@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:09:35 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:07 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:37:42 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * ft_memcpy - Copies n bytes from memory area src to memory area dst.
- * 
+ *
  * @dst: Pointer to the destination memory area.
  * @src: Pointer to the source memory area.
  * @n:   Number of bytes to copy.
@@ -34,6 +34,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	void	*p;
 
+	if (!dst && !src)
+		return (NULL);
 	p = dst;
 	while (n--)
 		*(unsigned char *)dst++ = *(const unsigned char *)src++;

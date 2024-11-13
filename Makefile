@@ -6,7 +6,7 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2024/11/12 01:43:16 by duha             ###   ########.fr        #
+#    Updated: 2024/11/13 04:38:47 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,5 +80,9 @@ re: fclean all
 
 bonus: $(OBJS) $(BONUS_OBJS)
 	ar rcs $(NAME) $^
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS)
+	gcc -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
 
 .PHONY: all clean fclean re bonus

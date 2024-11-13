@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:44:09 by duha              #+#    #+#             */
-/*   Updated: 2024/11/07 07:04:09 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/13 04:37:40 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * ft_memcmp - Compares the first n bytes of the memory areas s1 and s2.
- * 
+ *
  * @s1: Pointer to the first memory area.
  * @s2: Pointer to the second memory area.
  * @n:  Number of bytes to compare.
