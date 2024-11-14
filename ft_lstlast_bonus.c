@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:13:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:24 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:03 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  *
  * Return: Last node of the list.
  */
-
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

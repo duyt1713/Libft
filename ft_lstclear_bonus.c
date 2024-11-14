@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 22:52:07 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:18 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:51:56 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  * @lst: The address of a pointer to a node.
  * @del: The address of the function used to delete the content of the node.
  */
-
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;

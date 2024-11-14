@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:34:58 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:23 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:22 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  *
  * Return: The number of characters in the string pointed to by s.
  */
-
 size_t	ft_strlen(const char *s)
 {
 	const char	*start = s;

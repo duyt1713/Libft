@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 23:06:02 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:22 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:01 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * @lst: The address of a pointer to a node.
  * @f:   The address of the function used to iterate on the list.
  */
-
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)

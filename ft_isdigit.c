@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:32:12 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:05 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:51:26 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  *
  * Return: non-zero if the character is a digit, 0 otherwise.
  */
-
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

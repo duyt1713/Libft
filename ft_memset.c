@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 12:34:47 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:49 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:30 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@
  *
  * Return: A pointer to the memory area b.
  */
-
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*p;

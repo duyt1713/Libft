@@ -6,13 +6,15 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:38:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:11 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:51:41 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <limits.h>
 #include <stdlib.h>
+
+static size_t	ft_count_digit(int n);
 
 /**
  * ft_itoa - Allocates (with malloc(3)) and returns a string representing the
@@ -26,9 +28,6 @@
  * Return: The string representing the integer.
  *         NULL if the allocation fails.
  */
-
-static size_t	ft_count_digit(int n);
-
 char	*ft_itoa(int n)
 {
 	char	*p;

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:02:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 05:59:33 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:18 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@
  * create, which is the initial length of dst plus the length of src. If the
  * return value is greater than or equal to size, truncation occurred.
  */
-
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;

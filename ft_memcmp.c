@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:44:09 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:40 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:22 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@
  *         bytes of s1 are found, respectively, to be less than, to match, or be
  *         greater than the first n bytes of s2.
  */
-
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p1;

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:55:52 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:13 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:06 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * Return: A pointer to the matching character or NULL if the character does not
  *         occur in the given string.
  */
-
 char	*ft_strchr(const char *s, int c)
 {
 	const unsigned char	*p;

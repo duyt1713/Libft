@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:27:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:28 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:29 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@
  *         otherwise a pointer to the first character of
  *         the first occurrence of little is returned.
  */
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	little_len;

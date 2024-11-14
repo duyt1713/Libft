@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:04 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:32 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * @c:  The character to output.
  * @fd: The file descriptor on which to write.
  */
-
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

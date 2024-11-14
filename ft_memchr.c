@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 23:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 05:44:01 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:20 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * Return: A pointer to the matching byte
  *         or NULL if the character does not occur in the given memory area.
  */
-
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*p;

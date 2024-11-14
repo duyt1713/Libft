@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 11:13:30 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:00 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:50:45 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  *
  * Note: This function uses ft_memset to set the memory to zero.
  */
-
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);

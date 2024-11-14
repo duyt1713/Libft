@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:56:16 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:36:58 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:50:52 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@
  *
  * Return: A pointer to the allocated memory, or NULL if the allocation fails.
  */
-
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*p;

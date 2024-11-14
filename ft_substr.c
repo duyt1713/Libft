@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:50:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:33 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:36 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  *
  * Return: The substring, or NULL if the allocation fails.
  */
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	s_len;

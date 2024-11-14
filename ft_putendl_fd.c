@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:39:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:15:29 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:34 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * @s:  The string to output.
  * @fd: The file descriptor on which to write.
  */
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)

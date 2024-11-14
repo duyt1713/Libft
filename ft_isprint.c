@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:32:14 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:07 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:51:30 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  *
  * Return: non-zero if the character is printable, 0 otherwise.
  */
-
 int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);

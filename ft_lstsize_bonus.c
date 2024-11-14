@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 15:55:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:36 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:19 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  *
  * Return: The length of the list.
  */
-
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:10:40 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:20 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:51:59 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  * @lst: The node to free.
  * @del: The address of the function used to delete the content.
  */
-
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)

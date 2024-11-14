@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:21:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:18 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:16 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  *
  * Return: The new string, or NULL if the allocation fails.
  */
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	s1_len;

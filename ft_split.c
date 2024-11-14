@@ -6,12 +6,16 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 20:46:25 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 05:42:30 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:49 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+static size_t	ft_strs_len(char const *s, char c);
+static size_t	ft_strlen_deli(char const *s, char c);
+static void		ft_strs_cpy(char const *s, char c, char **p, size_t count);
 
 /**
  * ft_split - Allocates (with malloc(3)) and returns an array of strings
@@ -29,11 +33,6 @@
  * Return: The array of new strings resulting from the split.
  *         NULL if the allocation fails.
  */
-
-static size_t	ft_strs_len(char const *s, char c);
-static size_t	ft_strlen_deli(char const *s, char c);
-static void		ft_strs_cpy(char const *s, char c, char **p, size_t count);
-
 char	**ft_split(char const *s, char c)
 {
 	size_t	strings;

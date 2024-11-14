@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:25:05 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:15 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:08 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@
  * Return: A pointer to the duplicated string,
  *         or NULL if memory allocation fails.
  */
-
 char	*ft_strdup(const char *s1)
 {
 	char	*s2;

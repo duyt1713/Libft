@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:44:00 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:26 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:27 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@
  *         first n bytes thereof) is found, respectively, to be less than,
  *         to match, or be greater than s2.
  */
-
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	if (n == 0)

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:51:31 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:32 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:34 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  *
  * Return: The trimmed string, or NULL if the allocation fails.
  */
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char const	*start;

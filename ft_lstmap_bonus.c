@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 23:42:58 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 05:43:04 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:12 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@
  * Return: The new list.
  *         NULL if the allocation fails.
  */
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;

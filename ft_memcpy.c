@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:09:35 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:42 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:25 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@
  *
  * Return: A pointer to the destination memory area dst.
  */
-
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	void	*p;

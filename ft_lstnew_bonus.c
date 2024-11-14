@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 00:20:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:32 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:52:16 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  *
  * Return: The new node.
  */
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;

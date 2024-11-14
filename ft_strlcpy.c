@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 22:20:11 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:38:20 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:53:20 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  * ensuring that the result is NUL-terminated. It returns the total length of
  * the string it tried to create, which is the length of src.
  */
-
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	len;

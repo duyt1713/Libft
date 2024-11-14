@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 00:20:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/13 04:37:15 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 07:51:54 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
  * @lst: The address of a pointer to the first link of a list.
  * @new: The address of a pointer to the node to be added to the list.
  */
-
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (new)
