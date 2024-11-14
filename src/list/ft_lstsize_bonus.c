@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 16:21:46 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 09:35:36 by duha             ###   ########.fr       */
+/*   Created: 2024/11/11 15:55:18 by duha              #+#    #+#             */
+/*   Updated: 2024/11/14 11:35:43 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
- * ft_lstadd_back - Adds the node ’new’ at the end of the list.
+ * ft_lstsize - Counts the number of nodes in a list.
  *
- * @lst: The address of a pointer to the first link of a list.
- * @new: The address of a pointer to the node to be added to the list.
+ * @lst: The beginning of the list.
+ *
+ * Return: The length of the list.
  */
-void	ft_lstadd_back(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*last;
+	int	i;
 
-	if (!lst || !new)
-		return ;
-	if (!*lst)
+	i = 0;
+	while (lst)
 	{
-		*lst = new;
-		return ;
+		lst = lst-> next;
+		i++;
 	}
-	last = ft_lstlast(*lst);
-	last->next = new;
+	return (i);
 }

@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:10:40 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 09:35:50 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 11:35:27 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 #include <stdlib.h>
 
 /**

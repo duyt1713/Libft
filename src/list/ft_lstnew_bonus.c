@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 00:20:27 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 09:35:43 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 11:35:39 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
+#include <stdlib.h>
 
 /**
- * ft_lstadd_front - Adds the node ’new’ at the beginning of the list.
+ * ft_lstnew - Allocates (with malloc(3)) and returns a new node. The member
+ *             variable ’content’ is initialized with the value of the parameter
+ *             ’content’. The variable ’next’ is initialized to NULL.
  *
- * @lst: The address of a pointer to the first link of a list.
- * @new: The address of a pointer to the node to be added to the list.
+ * @content: The content to create the node with.
+ *
+ * Return: The new node.
  */
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstnew(void *content)
 {
-	if (new)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	t_list	*new_node;
+
+	new_node = (t_list *)malloc(sizeof(t_list));
+	if (!new_node)
+		return (NULL);
+	new_node->content = content;
+	new_node->next = NULL;
+	return (new_node);
 }
