@@ -6,11 +6,12 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:13:03 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:03 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 09:40:06 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
+#include <stdlib.h>
 
 /**
  * ft_lstlast - Returns the last node of the list.

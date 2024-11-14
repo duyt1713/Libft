@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 23:06:02 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:01 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 09:35:53 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
 
 /**
  * ft_lstiter - Iterates the list ’lst’ and applies the function ’f’

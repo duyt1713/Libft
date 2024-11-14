@@ -6,11 +6,12 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 23:42:58 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:12 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 09:39:59 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
+#include <stdlib.h>
 
 /**
  * ft_lstmap - Iterates the list ’lst’ and applies the function ’f’ on the

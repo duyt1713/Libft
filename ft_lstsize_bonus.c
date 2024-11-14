@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 15:55:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:19 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/14 09:36:03 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
 
 /**
  * ft_lstsize - Counts the number of nodes in a list.
