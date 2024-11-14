@@ -28,13 +28,13 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*string;
+	unsigned char	*p;
 
-	string = (unsigned char *)b;
+	p = (unsigned char *)b;
 	while (len > 0)
 	{
-		*string = (unsigned char)c;
-		string++;
+		*p = (unsigned char)c;
+		p++;
 		len--;
 	}
 	return (b);
