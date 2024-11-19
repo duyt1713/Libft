@@ -6,7 +6,7 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2024/11/14 11:40:53 by duha             ###   ########.fr        #
+#    Updated: 2024/11/19 16:11:42 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
 
-SRCS = 	src/classify/ft_isalnum.c \
+SRC = 	src/classify/ft_isalnum.c \
 		src/classify/ft_isalpha.c \
 		src/classify/ft_isascii.c \
 		src/classify/ft_isdigit.c \
@@ -59,29 +59,25 @@ BONUS = src/list/ft_lstnew_bonus.c \
 		src/list/ft_lstiter_bonus.c \
 		src/list/ft_lstmap_bonus.c
 
-OBJS = $(SRCS:.c=.o)
-BONUS_OBJS = $(BONUS:.c=.o)
+OBJ = $(SRC:.c=.o)
+BONUS_OBJ = $(BONUS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-bonus: $(BONUS_OBJS)
+bonus: $(BONUS_OBJ)
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
-
-.PHONY: all clean fclean re bonus so
+.PHONY: all clean fclean re bonus
