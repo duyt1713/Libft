@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 19:19:55 by duha              #+#    #+#             */
-/*   Updated: 2024/11/25 23:29:35 by duha             ###   ########.fr       */
+/*   Created: 2024/11/25 23:22:46 by duha              #+#    #+#             */
+/*   Updated: 2024/11/25 23:26:59 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * ft_isalpha - Checks if the given character is an alphabetic letter.
+ * ft_isspace - Checks if the given character is a whitespace character.
  *
  * @c: The character to be checked.
  *
- * This function checks if the given character is an alphabetic letter,
- * either uppercase (A-Z) or lowercase (a-z). It uses the ft_isupper
- * function to check for uppercase letters and the ft_islower function
- * to check for lowercase letters.
+ * This function checks if the given character is a whitespace character.
+ * These characters are space (' '), horizontal tab ('\t'), newline ('\n'),
+ * vertical tab ('\v'), form feed ('\f'), and carriage return ('\r').
  *
- * Return: non-zero if the character is an alphabetic letter, 0 otherwise.
+ * Return: non-zero if the character is a whitespace character, 0 otherwise.
  */
-int	ft_isalpha(int c)
+int	ft_isspace(int c)
 {
-	return (ft_isupper(c) || ft_islower(c));
+	return (c == ' ' || c == '\t' || c == '\n' || \
+			c == '\v' || c == '\f' || c == '\r');
 }

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/25 23:14:41 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/25 23:25:27 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,6 @@
  *
  * @nptr: The string to be converted.
  *
- * Helper function:
- * ft_isspace: Checks if a character is a whitespace character.
- *
  * This function converts the initial portion of the string pointed to by nptr
  * to int representation. It discards any whitespace characters until the first
  * non-whitespace character is found. Then, it takes an optional initial plus
@@ -28,9 +25,6 @@
  *
  * Return: The converted integer.
  */
-int			ft_atoi(const char *nptr);
-static int	ft_isspace(int c);
-
 int	ft_atoi(const char *nptr)
 {
 	int			sign;
@@ -58,9 +52,4 @@ int	ft_atoi(const char *nptr)
 		nptr++;
 	}
 	return ((int)(num * sign));
-}
-
-static int	ft_isspace(int c)
-{
-	return (c == 32 || (9 <= c && c <= 13));
 }
