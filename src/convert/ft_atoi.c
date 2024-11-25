@@ -6,13 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:47:54 by duha             ###   ########.fr       */
+/*   Updated: 2024/11/25 23:14:41 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_isspace(int c);
 
 /**
  * ft_atoi - Converts a string to an integer.
@@ -30,6 +28,9 @@ static int	ft_isspace(int c);
  *
  * Return: The converted integer.
  */
+int			ft_atoi(const char *nptr);
+static int	ft_isspace(int c);
+
 int	ft_atoi(const char *nptr)
 {
 	int			sign;
