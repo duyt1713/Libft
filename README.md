@@ -13,9 +13,3 @@ All OK'ed using 4 different testers:
 - **[libft-war-machine](https://github.com/0x050f/libft-war-machine)**
 - **[libftTester](https://github.com/Tripouille/libftTester)**
 - **[libft-unit-test](https://github.com/alelievr/libft-unit-test)**
-
-Further tetsting with **[francinette](https://github.com/xicodomingues/francinette)** to be done.
-
-## Language Composition
-- C: 97%
-- Makefile: 3%
