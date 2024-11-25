@@ -6,7 +6,7 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2024/11/19 16:11:42 by duha             ###   ########.fr        #
+#    Updated: 2024/11/25 23:36:32 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,10 @@ SRC = 	src/classify/ft_isalnum.c \
 		src/classify/ft_isalpha.c \
 		src/classify/ft_isascii.c \
 		src/classify/ft_isdigit.c \
+		src/classify/ft_islower.c \
 		src/classify/ft_isprint.c \
+		src/classify/ft_isspace.c \
+		src/classify/ft_isupper.c \
 		src/convert/ft_atoi.c \
 		src/convert/ft_itoa.c \
 		src/convert/ft_tolower.c \
