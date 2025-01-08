@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:43:10 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/08 11:44:43 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,6 @@
 
 # include <stddef.h>
 # include <stdint.h>
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
 
 /* Character classification functions */
 
@@ -76,6 +70,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 /* List functions */
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
@@ -96,5 +96,14 @@ int		ft_print_udecimal(unsigned int num);
 int		ft_print_decimal(int num);
 int		ft_print_hex_lower(uintptr_t num);
 int		ft_print_hex_upper(uintptr_t num);
+
+/* get_next_line functions */
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
+
+char	*get_next_line(int fd);
+char	*ft_strjoin_free(char *s1, char *s2);
 
 #endif

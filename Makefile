@@ -6,7 +6,7 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2024/11/26 02:06:03 by duha             ###   ########.fr        #
+#    Updated: 2025/01/08 11:53:45 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,6 @@ SRC_CLASSIFY = 	src/classify/ft_isalnum.c \
 				src/classify/ft_isprint.c \
 				src/classify/ft_isspace.c \
 				src/classify/ft_isupper.c
-
 
 SRC_CONVERT = 	src/convert/ft_atoi.c \
 				src/convert/ft_itoa.c \
@@ -57,7 +56,17 @@ SRC_STRING = 	src/string/ft_strchr.c \
 				src/string/ft_split.c \
 				src/string/ft_striteri.c
 
-SRC_PRINTF = src/printf/ft_printf.c \
+SRC_LIST = 		src/list/ft_lstnew.c \
+				src/list/ft_lstadd_front.c \
+				src/list/ft_lstsize.c \
+				src/list/ft_lstlast.c \
+				src/list/ft_lstadd_back.c \
+				src/list/ft_lstdelone.c \
+				src/list/ft_lstclear.c \
+				src/list/ft_lstiter.c \
+				src/list/ft_lstmap.c
+
+SRC_PRINTF = 	src/printf/ft_printf.c \
 				src/printf/ft_print_char.c \
 				src/printf/ft_print_str.c \
 				src/printf/ft_print_pointer.c \
@@ -66,20 +75,11 @@ SRC_PRINTF = src/printf/ft_printf.c \
 				src/printf/ft_print_hex_lower.c \
 				src/printf/ft_print_hex_upper.c
 
-SRC = $(SRC_CLASSIFY) $(SRC_CONVERT) $(SRC_IN_OUT) $(SRC_MEMORY) $(SRC_STRING) $(SRC_PRINTF)
+SRC_GNL = 		src/gnl/get_next_line.c \
+				src/gnl/ft_strjoin_free.c
 
-BONUS = src/list/ft_lstnew_bonus.c \
-		src/list/ft_lstadd_front_bonus.c \
-		src/list/ft_lstsize_bonus.c \
-		src/list/ft_lstlast_bonus.c \
-		src/list/ft_lstadd_back_bonus.c \
-		src/list/ft_lstdelone_bonus.c \
-		src/list/ft_lstclear_bonus.c \
-		src/list/ft_lstiter_bonus.c \
-		src/list/ft_lstmap_bonus.c
-
+SRC = $(SRC_CLASSIFY) $(SRC_CONVERT) $(SRC_IN_OUT) $(SRC_MEMORY) $(SRC_STRING) $(SRC_LIST) $(SRC_PRINTF) $(SRC_GNL)
 OBJ = $(SRC:.c=.o)
-BONUS_OBJ = $(BONUS:.c=.o)
 
 all: $(NAME)
 
@@ -90,13 +90,11 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(BONUS_OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-bonus: $(BONUS_OBJ)
-
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re

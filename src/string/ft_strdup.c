@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:25:05 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:08 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/08 11:39:40 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,14 @@
  */
 char	*ft_strdup(const char *s1)
 {
-	char	*s2;
-	char	*p;
+	char	*dup;
+	size_t	len;
 
-	s2 = (char *)malloc(ft_strlen(s1) + 1);
-	if (!s2)
+	len = ft_strlen(s1);
+	dup = (char *)malloc(len + 1);
+	if (!dup)
 		return (NULL);
-	p = s2;
-	while (*s1)
-		*p++ = *s1++;
-	*p = '\0';
-	return (s2);
+	ft_memmove(dup, s1, len);
+	dup[len] = '\0';
+	return (dup);
 }
