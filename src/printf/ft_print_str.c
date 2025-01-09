@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 21:01:00 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:14:18 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:50 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_print_str - Writes a string to the standard output.

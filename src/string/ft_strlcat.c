@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 23:02:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:18 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:33:59 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_strlcat - Concatenates the string src to the end of dst, ensuring that the

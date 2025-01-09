@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 12:34:47 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:30 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:35 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_memset - Fills the first len bytes of the memory area pointed to by b

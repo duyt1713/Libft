@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:44:00 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:27 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:34:08 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_strncmp - Compares up to n characters of the strings s1 and s2.

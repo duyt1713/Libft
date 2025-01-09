@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 20:34:58 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:22 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:34:03 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_strlen - Calculates the length of a string.

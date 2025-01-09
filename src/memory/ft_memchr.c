@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 23:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:20 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:25 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_memchr - Locate the first occurrence of c (converted to an unsigned char)

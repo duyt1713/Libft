@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 22:29:51 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:13:24 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:48 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_print_pointer - Writes a pointer address to the standard output.

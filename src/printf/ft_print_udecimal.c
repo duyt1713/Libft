@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 10:06:50 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:15:21 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:52 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_print_udecimal - Writes an unsigned integer to the standard output.

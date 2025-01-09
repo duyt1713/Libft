@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 22:20:11 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:20 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:34:01 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_strlcpy - Copies up to size - 1 characters from the NUL-terminated string

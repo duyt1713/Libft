@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:27:18 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:29 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:34:11 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_strnstr - Locate the first occurrence of the null-terminated string little

@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 11:20:38 by duha              #+#    #+#             */
-/*   Updated: 2024/11/25 23:33:18 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:30:33 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_toupper - Converts a lowercase letter to an uppercase letter.

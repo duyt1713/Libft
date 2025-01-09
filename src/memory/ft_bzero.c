@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 11:13:30 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:50:45 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:20 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_bzero - Sets the first n bytes of the memory area pointed to by s to zero.

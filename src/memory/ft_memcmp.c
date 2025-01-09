@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:44:09 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:22 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:27 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_memcmp - Compares the first n bytes of the memory areas s1 and s2.

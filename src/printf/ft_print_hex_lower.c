@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 22:06:54 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:16:50 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:44 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_print_hex_lower - Writes an unsigned integer in lowercase hexadecimal

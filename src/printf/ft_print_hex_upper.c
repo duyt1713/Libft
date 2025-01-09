@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 23:59:25 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:17:06 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:46 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_print_hex_upper - Writes an unsigned integer in uppercase hexadecimal

@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:34:22 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:53:14 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:33:55 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_striteri - Applies the function f on each character of the string

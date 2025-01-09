@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 21:26:21 by duha              #+#    #+#             */
-/*   Updated: 2024/11/26 02:16:16 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:42 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_print_decimal - Writes an integer to the standard output.

@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 00:09:35 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:52:25 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:31:29 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_memcpy - Copies n bytes from memory area src to memory area dst.
