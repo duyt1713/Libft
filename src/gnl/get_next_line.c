@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 08:04:31 by duha              #+#    #+#             */
-/*   Updated: 2025/01/08 11:50:28 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:27:00 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -30,35 +30,32 @@ static void	free_and_null(char **storage, char **read_buffer);
 char	*get_next_line(int fd)
 {
 	char		*read_buffer;
-	static char	*storage;
+	static char	*storage[OPEN_MAX];
 	char		*tmp;
 	ssize_t		bytes;
 
-	if (initialize(fd, &storage) == 1)
+	if (initialize(fd, &storage[fd]) == 1)
 		return (NULL);
 	read_buffer = malloc((unsigned int)BUFFER_SIZE + 1);
 	if (!read_buffer)
 		return (NULL);
-	while (!ft_strchr(storage, '\n'))
+	while (!ft_strchr(storage[fd], '\n'))
 	{
 		bytes = read(fd, read_buffer, BUFFER_SIZE);
 		if (bytes <= 0)
-			return (read_fail_eol(bytes, &read_buffer, &storage));
+			return (read_fail_eol(bytes, &read_buffer, &storage[fd]));
 		read_buffer[bytes] = '\0';
-		tmp = storage;
-		storage = ft_strjoin_free(storage, read_buffer);
-		if (!storage)
-		{
-			free(tmp);
-			return (free(read_buffer), NULL);
-		}
+		tmp = storage[fd];
+		storage[fd] = ft_strjoin_free(storage[fd], read_buffer);
+		if (!storage[fd])
+			return (free (tmp), free(read_buffer), NULL);
 	}
-	return (do_line(&storage, &read_buffer));
+	return (do_line(&storage[fd], &read_buffer));
 }
 
 static int	initialize(int fd, char **storage)
 {
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd >= OPEN_MAX || BUFFER_SIZE <= 0)
 		return (1);
 	if (!*storage)
 		*storage = ft_strdup("");

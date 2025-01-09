@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2025/01/08 11:44:43 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/09 18:22:52 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,8 @@ int		ft_print_hex_upper(uintptr_t num);
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 5
 # endif
+
+# define OPEN_MAX 1024
 
 char	*get_next_line(int fd);
 char	*ft_strjoin_free(char *s1, char *s2);
