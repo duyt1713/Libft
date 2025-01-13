@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 23:28:34 by duha              #+#    #+#             */
-/*   Updated: 2024/11/25 23:30:35 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 11:48:13 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_islower - Checks if the given character is a lowercase letter.

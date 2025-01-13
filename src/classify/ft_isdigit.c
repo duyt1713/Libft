@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:32:12 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:51:26 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 11:48:10 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_isdigit - Checks if the given character is a digit.

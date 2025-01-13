@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:32:14 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:51:30 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 11:48:15 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_isprint - Checks if the given character is printable.

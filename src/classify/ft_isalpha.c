@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:19:55 by duha              #+#    #+#             */
-/*   Updated: 2024/11/25 23:29:35 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 11:48:05 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_isalpha - Checks if the given character is an alphabetic letter.

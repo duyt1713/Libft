@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 23:29:39 by duha              #+#    #+#             */
-/*   Updated: 2024/11/25 23:31:02 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 11:48:20 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_isupper - Checks if the given character is an uppercase letter.

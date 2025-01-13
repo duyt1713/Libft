@@ -6,11 +6,11 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:29:15 by duha              #+#    #+#             */
-/*   Updated: 2024/11/14 07:50:15 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 11:48:03 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /**
  * ft_isalnum - Checks if the given character is alphanumeric.
