@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:26:18 by duha              #+#    #+#             */
-/*   Updated: 2025/01/09 18:30:27 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 12:46:22 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_atoi(const char *nptr)
 	num = 0;
 	while (ft_isspace(*nptr))
 		nptr++;
-	if (*nptr == '-' || *nptr == '+')
+	if (ft_issign(*nptr))
 	{
 		if (*nptr == '-')
 			sign = -1;

@@ -6,7 +6,7 @@
 /*   By: duha <duha@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:45:45 by duha              #+#    #+#             */
-/*   Updated: 2025/01/09 18:22:52 by duha             ###   ########.fr       */
+/*   Updated: 2025/01/13 12:45:04 by duha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
 int		ft_isupper(int c);
+int		ft_issign(int c);
 
 /* Conversion functions */
 
