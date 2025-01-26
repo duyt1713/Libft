@@ -6,7 +6,7 @@
 #    By: duha <duha@student.hive.fi>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:45:39 by duha              #+#    #+#              #
-#    Updated: 2025/01/14 16:44:57 by duha             ###   ########.fr        #
+#    Updated: 2025/01/26 07:15:23 by duha             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,8 @@ SRC_STRING = 	src/string/ft_strchr.c \
 				src/string/ft_strtrim.c \
 				src/string/ft_substr.c \
 				src/string/ft_split.c \
-				src/string/ft_striteri.c
+				src/string/ft_striteri.c \
+				src/string/ft_strcmp.c
 
 SRC_LIST = 		src/list/ft_lstnew.c \
 				src/list/ft_lstadd_front.c \
